@@ -1,6 +1,6 @@
 {
-  "name": "@frida/prebuild",
-  "version": "11.0.1-frida.0",
+  "name": "prebuild",
+  "version": "11.0.3",
   "description": "A command line tool for easily making prebuilt binaries for multiple versions of node, electron or node-webkit on a specific platform",
   "scripts": {
     "test": "verify-travis-appveyor && tape test && npm run lint",
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "cmake-js": "~5.2.0",
-    "detect-libc": "^1.0.3",
+    "detect-libc": "^2.0.0",
     "each-series-async": "^1.0.1",
     "execspawn": "^1.0.1",
     "ghreleases": "^3.0.2",
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frida/prebuild.git"
+    "url": "https://github.com/prebuild/prebuild.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "contributors": [
@@ -71,8 +71,5 @@
   "homepage": "https://github.com/prebuild/prebuild",
   "engines": {
     "node": ">=10"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
