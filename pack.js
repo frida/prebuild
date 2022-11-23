@@ -1,6 +1,7 @@
 var eachSeries = require('each-series-async')
 var fs = require('fs')
 var path = require('path')
+var mkdirp = require('mkdirp')
 var tar = require('tar-stream')
 var zlib = require('zlib')
 
@@ -9,7 +10,7 @@ function mode (octal) {
 }
 
 function pack (filenames, tarPath, cb) {
-  fs.mkdir(path.dirname(tarPath), { recursive: true }, function () {
+  mkdirp(path.dirname(tarPath), function () {
     if (!Array.isArray(filenames)) {
       filenames = [filenames]
     }
