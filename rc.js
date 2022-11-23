@@ -1,5 +1,5 @@
 var minimist = require('minimist')
-var targets = require('node-abi').supportedTargets
+var targets = require('@frida/node-abi').supportedTargets
 var detectLibc = require('detect-libc')
 var napi = require('napi-build-utils')
 
